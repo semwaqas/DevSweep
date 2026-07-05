@@ -1,0 +1,15 @@
+{
+  "name": "devsweep",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Safe developer disk cleanup assistant.",
+  "scripts": {
+    "dev": "corepack pnpm --filter @devsweep/desktop dev",
+    "build": "corepack pnpm --filter @devsweep/core build && corepack pnpm --filter @devsweep/utils build && corepack pnpm --filter @devsweep/desktop build",
+    "tauri": "corepack pnpm --filter @devsweep/desktop tauri"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}
